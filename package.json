@@ -5,8 +5,7 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc",
-    "dev:debug": "ts-node-dev --no-notify --inspect --transpileOnly --ignore-watch node_modules src/server.ts",
-    "dev:server": "ts-node-dev --no-notify --respawn --transpileOnly --ignore-watch node_modules src/server.ts"
+    "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js"
   },
   "dependencies": {
     "date-fns": "^2.14.0",
