@@ -1,8 +1,17 @@
 {
   "type": "postgres",
-  "host": "localhost",
+  "host": "gobarber_database",
   "port": 5432,
   "username": "root",
   "password": "root",
-  "database": "gobarber"
+  "database": "gobarber",
+  "entities":[
+    "./src/models/*.ts"
+  ],
+  "migrations": [
+    "./src/database/migrations/*.ts"
+  ],
+  "cli": {
+    "migrationsDir": "./src/database/migrations"
+  }
 }
