@@ -38,4 +38,13 @@ describe('SendForgotPasswordEmailService', () => {
 
     expect(sendMail).toHaveBeenCalled();
   });
+
+  it('should not be able to recover a non-existing user password', async () => {
+    await expect(
+      sendForgotPasswordEmail.execute({
+        email: 'johndoe@example.com',
+      }),
+    ).rejects.toBeInstanceOf(AppError);
+  });
+
 });
