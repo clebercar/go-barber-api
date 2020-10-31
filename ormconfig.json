@@ -2,7 +2,7 @@
   {
     "name": "default",
     "type": "postgres",
-    "host": "gobarber_database",
+    "host": "database",
     "port": 5432,
     "username": "root",
     "password": "root",
